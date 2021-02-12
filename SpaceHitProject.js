@@ -9027,10 +9027,17 @@ if (reversed == null) { reversed = false; }
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_2},{t:this.shape_1}]}).to({state:[{t:this.shape_3},{t:this.shape_1}]},1).wait(1));
 
+	// Layer_2
+	this.shape_4 = new cjs.Shape();
+	this.shape_4.graphics.f("rgba(0,0,0,0.008)").s().p("AlEDVIAAmpIKJAAIAAGpg");
+	this.shape_4.setTransform(16.325,10.75);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape_4).wait(2));
+
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(0.5,-2.5,28.6,28.7);
+p.nominalBounds = new cjs.Rectangle(-16.2,-10.5,65.1,42.6);
 
 
 (lib.skipBtn = function(mode,startPosition,loop,reversed) {
@@ -9594,21 +9601,21 @@ if (reversed == null) { reversed = false; }
 
 	// Layer_1
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#FFFFFF").ss(4,1,1).p("AArhSIAACkAgqhQIAACj");
+	this.shape.graphics.f().s("#FFFFFF").ss(4,1,1).p("AgqhQIAACjAArhSIAACk");
 	this.shape.setTransform(6.3,10.2);
 
 	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
 
 	// Layer_2
 	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f("rgba(204,204,204,0.008)").s().p("AhZBrIAAjVICzAAIAADVg");
-	this.shape_1.setTransform(6.35,10.075);
+	this.shape_1.graphics.f("rgba(0,0,0,0.008)").s().p("AibCTIAAkmIE3AAIAAEmg");
+	this.shape_1.setTransform(6.35,10.1);
 
 	this.timeline.addTween(cjs.Tween.get(this.shape_1).wait(1));
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.pauseBtn, new cjs.Rectangle(-2.6,-0.6,17.900000000000002,21.400000000000002), null);
+}).prototype = getMCSymbolPrototype(lib.pauseBtn, new cjs.Rectangle(-9.3,-4.6,31.3,29.5), null);
 
 
 (lib.spaceShip_opening_flames_2 = function(mode,startPosition,loop,reversed) {
@@ -32926,9 +32933,6 @@ if (reversed == null) { reversed = false; }
 		stage.enableMouseOver(24);
 		
 		
-		
-		
-		
 		var self = this;
 		
 		
@@ -32959,10 +32963,8 @@ if (reversed == null) { reversed = false; }
 		var gameOpening = new createjs.Container();
 		stage.addChild(gameOpening);
 		
-		
 		// קריאה לפונקציית יצירת עמוד הפתיחה של המשחק
 		createOpeninGame();
-		
 		
 		//הוספת הקומבו לבמה
 		var forcombo = new lib.forcomb();
@@ -32981,9 +32983,8 @@ if (reversed == null) { reversed = false; }
 		
 		// פונקציה הנוצרת בעת העליה הראשונה של מסך המשחק, ומכילה בתוכה את היצירה של כל האלמנטים על המסך
 		function createOpeninGame() {
-			var welcomeMusic = createjs.Sound.play("openEnd");
+		
 			//רקע עם גלים
-			//----לבדוק על עניין הפריימים
 			var mainWaves = new lib.bgWaves();
 			mainWaves.x = -350;
 			mainWaves.y = -60;
@@ -32998,10 +32999,7 @@ if (reversed == null) { reversed = false; }
 			gameOpening.addChild(whiteWave);
 			gameOpening.addChildAt(whiteWave, 2);
 		
-		
-		
 			//יצירת כולכבים דינאמיים--------------------------------
-		
 		
 			//כוכבי לכת
 		
@@ -33072,7 +33070,6 @@ if (reversed == null) { reversed = false; }
 		//בעת שינוי ערך בקומבו
 		function comboBox_change(evt) {
 			//שמירת הערך שנבחר בקומבו
-			console.log(evt.currentTarget.value);
 			mychoice = evt.currentTarget.value;
 			//אם נבחר הערך הראשון - "בחר נושא
 			if (mychoice == 0) {
@@ -33102,7 +33099,7 @@ if (reversed == null) { reversed = false; }
 		
 		
 		function firstGameFunc() {
-			//יש להכניס אל המערך את התוכן של המשחק הראשון
+		
 			myGame = [
 				//שאלה ראשונה---------------------------------------
 				[
@@ -33215,11 +33212,10 @@ if (reversed == null) { reversed = false; }
 			randomArray();
 			//פונקציה לבחירת דמות והתחלת משחק
 			chooseAlienColor();
-			//startGame();
+		
 		}
 		
 		function secondGameFunc() {
-			//יש להכניס אל המערך את התוכן של המשחק השני
 			myGame = [
 				//שאלה ראשונה---------------------------------------
 				[
@@ -33331,9 +33327,7 @@ if (reversed == null) { reversed = false; }
 			];
 		
 			randomArray();
-		
 			chooseAlienColor();
-			//startGame();
 		}
 		
 		//משתנים לצורך ערבוב השאלות ------------------------------
@@ -33362,11 +33356,6 @@ if (reversed == null) { reversed = false; }
 		
 			//החזרת השאלות למערך המקורי
 			myGame = newArray;
-		
-			console.log("newArray = ");
-			console.log(newArray);
-			console.log("myGame =  ");
-			console.log(myGame);
 		
 		}
 		
@@ -33441,10 +33430,20 @@ if (reversed == null) { reversed = false; }
 		// משתנה גלובלי לתשובות על האסטרואידים
 		var rndAnswer;
 		
-		
 		//משתנה המגלם את כמות השניות בין יצירת האסטרואיד ומשתנה בהתאם 
 		var speedy = 6000;
 		
+		// מיקום של האובייקט הנוצר במערך האסטרואיד
+		var counter = 0;
+		
+		//משתנה השומר את מופע התמונה שעל האסטרואיד
+		var imageOnAst;
+		
+		//משתנה השומר את מופע זכוכית המגדלת שעל האסטרואיד
+		var searchPhoto;
+		
+		//משתנה לצורך מיקום האסטרואידים במערך
+		var asteroidVar;
 		
 		// מעברים בין שאלות ------------------------------------------------
 		
@@ -33466,8 +33465,23 @@ if (reversed == null) { reversed = false; }
 		//משתנה ליצירת תמונה בשאלה
 		var QusImage;
 		
+		//משתנה גלובלי לשמירת מופע השאלה
 		var question;
 		
+		//משתנה לכפתור הפאוז
+		var pause;
+		
+		//משתנה לכפתור הסאונד
+		var mysound;
+		
+		//משתנה השומר את הניגון של המוזיקה
+		var soundPlaying = false;
+		
+		//משתנה השומר את המופע של החייזר
+		var myAlien;
+		
+		// משתנה הבודק האם כל התשובות הנכונות נבחרו לצורך מעבר לשאלה הבאה
+		var maxAnswers = false;
 		
 		
 		//בחירת דמות-------------------------------------------------
@@ -33478,14 +33492,14 @@ if (reversed == null) { reversed = false; }
 		
 		//פונקציית בחירת דמות, מוחקת את קונטיינר עמוד הפתיחה ומאפשרת מעברי עכבר
 		function chooseAlienColor() {
-			console.log(myGame);
 			stage.removeChild(gameOpening);
 			LittleStars.gotoAndStop(1);
 			chooseAlien = new lib.ChooseAlien();
 			stage.addChild(chooseAlien);
 			chooseAlien.x = 438;
 			chooseAlien.y = 375;
-		
+			chooseAlien.pinkAlien.cursor = "pointer";
+			chooseAlien.blueAlien.cursor = "pointer";
 			//מעברי עכבר
 			alienMouseEventTrue();
 		
@@ -33509,11 +33523,12 @@ if (reversed == null) { reversed = false; }
 		//פונקציית יציאה ממעבר עכבר לדמויות
 		function alienOut(evt) {
 			evt.currentTarget.gotoAndStop(0);
-			//chooseAlien.blueAlien.gotoAndStop(0);
-			//chooseAlien.pinkAlien.gotoAndStop(0);
+		
 		}
 		
+		//משתנה השומר את החייזר שנבחר
 		var alienVar;
+		
 		var clickCount = 0; //----------- משתנה שנוצר כדי לספור את כמות הלחיצות 
 		
 		//פונקציה לאחר לחיצה על אחת הדמויות, יצירת הכפתור ואירוע לחיצה
@@ -33529,12 +33544,10 @@ if (reversed == null) { reversed = false; }
 				btnChooseAlienStart.y = 665;
 				btnChooseAlienStart.name = "realStartButton"
 				btnChooseAlienStart.addEventListener("click", startGame);
-		
+				btnChooseAlienStart.cursor = "pointer";
 			}
 		
 			evt.currentTarget.gotoAndStop(1);
-		
-			console.log(evt.currentTarget.name);
 			myAlienChoice = evt.currentTarget.name;
 		
 			if (myAlienChoice == "pinkAlien") {
@@ -33554,30 +33567,24 @@ if (reversed == null) { reversed = false; }
 				chooseAlien.pinkAlien.gotoAndStop(0);
 			}
 		
-		
-		
 		}
 		
 		var openAnimation;
 		
 		//פונקציית התחלת משחק היוצרת את אנימצית הפתיחה וקוראת לפונקציית יצירת המשחק
 		function startGame() {
-		soundPlaying = true;
+			soundPlaying = true;
+		
 			clickCount = 0;
+		
 			stage.removeChild(stage.getChildByName("realStartButton"));
-			var welcomeMusic = createjs.Sound.stop("openEnd");
+		
 			var entranceAnMusic = createjs.Sound.play("startMusic");
-		
-			console.log(alienVar);
-		
-			console.log("תחילת משחק");
 		
 			stage.removeChild(chooseAlien);
 		
 			stage.getChildByName("twoWaves").visible = false;
 			LittleStars.visible = false;
-		
-			//בחירת דמות
 		
 			//אנימציית פתיחה
 			openAnimation = new lib.opening();
@@ -33593,6 +33600,7 @@ if (reversed == null) { reversed = false; }
 			movingPlanets.y = -400;
 			movingPlanets.gotoAndStop(myPlanets);
 		
+			//אנימציית הצגת שאלה ע״פ סוג החייזר שנבחר
 			if (alienVar == 0) {
 				bigOrangePlanet = new lib.bigOrange0();
 			} else {
@@ -33605,7 +33613,7 @@ if (reversed == null) { reversed = false; }
 		
 			bigOrangePlanet.gotoAndStop(myPlanets);
 		
-		
+			//לאחר 28 שניות של האנימציה אירוע לחיצה לתחילת המשחק
 			animationTimeOut = setTimeout(clickToStart, 28000);
 		
 			skipButton = new lib.skipBtn();
@@ -33613,10 +33621,9 @@ if (reversed == null) { reversed = false; }
 			skipButton.x = 120;
 			skipButton.y = 670;
 		
+			//אירוע לחיצה לדילוג על האנימציה
 			skipButton.addEventListener("click", skipToStart);
 			skipButton.cursor = "pointer";
-			//אירוע לחיצה ליצירת המחשחק
-			//createGame();
 		
 		}
 		
@@ -33658,18 +33665,16 @@ if (reversed == null) { reversed = false; }
 			startButton.cursor = "pointer";
 		
 		}
-		var pause;
-		var mysound;
-		var soundPlaying = false;
 		
-		var myAlien;
 		
 		// פונקצית יצירת מופעים דינאמיים למשחק
 		function createGame() {
+		
+			//כיבוי מוזיקת הפתיחה והכפעלת מוזיקת הרקע של המשחק
 			var entranceAnMusic = createjs.Sound.stop("startMusic");
 			var gameMusic = createjs.Sound.play("mainMusic");
 			createjs.Sound.play("mainMusic").loop = true;
-			//gameMusic.loop = -1;
+		
 		
 			//הוספת הגלים מחדש
 			stage.getChildByName("twoWaves").visible = true;
@@ -33691,6 +33696,7 @@ if (reversed == null) { reversed = false; }
 			bigOrangePlanet.gotoAndPlay(1);
 		
 		
+			//תנאי הבודק האם בשאלה הראשונה יש תמונה, במידה וכן הוא מוסיף את התמונה ואת זכוכית המגדלת
 			if (myGame[myPlanets][0][1] == "0") {
 				bigOrangePlanet.pink_alian_show_ques.question_present.text = myGame[myPlanets][0][0];
 		
@@ -33712,10 +33718,6 @@ if (reversed == null) { reversed = false; }
 		
 				QusImage.addEventListener("mouseover", hoverAstImage);
 				QusImage.addEventListener("mouseout", outAstImage);
-		
-		
-		
-		
 			}
 		
 			//העלמת הכפתור
@@ -33730,18 +33732,14 @@ if (reversed == null) { reversed = false; }
 			}
 		
 		
-		
-		
 			// יצירת קונטיינר לאובייקטים של המשחק
 			game = new createjs.Container();
 			stage.addChild(game);
-			//stage.addChildAt(game, 5);
 		
 			//יצירת קונטיינר לחללית
 			spaceShipContainer = new createjs.Container();
 			stage.addChild(spaceShipContainer);
 			spaceShipContainer.name = "spaceShipContainerName"
-		
 		
 			//הוספת כוכבים קטנטנים זזים
 			LittleStars.gotoAndStop(3);
@@ -33752,14 +33750,9 @@ if (reversed == null) { reversed = false; }
 			spaceship.y = 540;
 			spaceShipContainer.addChild(spaceship);
 			spaceship.visible = false;
-			//game.addChildAt(spaceship, 10);
-		
-		
 		
 			//קריאה לפונקציית מקשי המקלדת
 			window.addEventListener("keydown", keypress);
-		
-		
 		
 			//יצירת לוח הבקרה----------
 			//רקע dashboard
@@ -33768,14 +33761,12 @@ if (reversed == null) { reversed = false; }
 			game.addChildAt(dashboard, 4);
 			dashboard.x = 1080;
 		
-		
 			// יצירת הצל של החייזר
 			var alienFloor = new lib.alienShadow();
 			game.addChild(alienFloor);
 			game.addChildAt(alienFloor, 3);
 			alienFloor.x = 1110;
 			alienFloor.y = 700;
-		
 		
 			//יצירת החייזר
 			if (alienVar == 0) {
@@ -33793,14 +33784,12 @@ if (reversed == null) { reversed = false; }
 			myAlien.name = "myAlienName";
 			myAlien.visible = false;
 		
-		
 			//רקע מד מהירות
 			var speedBG = new lib.board();
 			game.addChild(speedBG);
 			game.addChildAt(speedBG, 4);
 			speedBG.x = 1145;
 			speedBG.y = 75;
-		
 		
 			//מד מהירות
 			speedBoard = new lib.mad_Mehirut();
@@ -33809,7 +33798,6 @@ if (reversed == null) { reversed = false; }
 			speedBoard.x = 1162;
 			speedBoard.y = 182;
 			speedBoard.gotoAndStop(2);
-		
 		
 			//בועת דיבור
 			question = new lib.question();
@@ -33831,15 +33819,11 @@ if (reversed == null) { reversed = false; }
 			}
 		
 		
-		
 			//יצירת כוכבי לכת------------------------------------------------------------------
 		
 			//כוכב כתום
-			//var orangeRND = Math.floor((Math.random() * 3));
 			var orangeRND = parseInt(Math.random() * ((1 + 5) - (3))) + 3;
 			planetQNum[0] = orangeRND;
-			console.log("כתום  " + orangeRND);
-		
 		
 			if (orangeRND == 3) {
 				var orange_planet = new lib.orange_planet3();
@@ -33848,8 +33832,8 @@ if (reversed == null) { reversed = false; }
 				orange_planet.name = "planet1";
 				orange_planet.x = 19;
 				orange_planet.y = 602;
-				//orange_planet.gotoAndStop(0);
 				game.getChildByName("planet1").gotoAndStop(1);
+				//חיתוך שני מסיחים מהמערך במידה והוגרלו 3 מסיחים נכונים
 				myGame[0].splice(1, 2);
 				myGame[0].splice(9, 5);
 				scoreArray[2][0] = myGame[0].length - 1;
@@ -33862,8 +33846,8 @@ if (reversed == null) { reversed = false; }
 				orange_planet.name = "planet1";
 				orange_planet.x = 19;
 				orange_planet.y = 597;
-				//orange_planet.gotoAndStop(0);
 				game.getChildByName("planet1").gotoAndStop(1);
+				//חיתוך מסיח אחד מהמערך במידה והוגרלו 4 מסיחים נכונים
 				myGame[0].splice(1, 1);
 				myGame[0].splice(11, 3);
 				scoreArray[2][0] = myGame[0].length - 1;
@@ -33875,14 +33859,12 @@ if (reversed == null) { reversed = false; }
 				orange_planet.name = "planet1";
 				orange_planet.x = 19;
 				orange_planet.y = 655;
-				//orange_planet.gotoAndStop(0);
 				game.getChildByName("planet1").gotoAndStop(1);
 				scoreArray[2][0] = myGame[0].length - 1;
 			}
 		
 			//כוכב סגול
 			var purpleRND = parseInt(Math.random() * ((1 + 5) - (3))) + 3;
-			console.log("סגול  " + purpleRND);
 			planetQNum[1] = purpleRND;
 		
 		
@@ -33893,7 +33875,6 @@ if (reversed == null) { reversed = false; }
 				purple_planet.name = "planet2";
 				purple_planet.x = 16;
 				purple_planet.y = 474;
-				//purple_planet.gotoAndStop(0);
 				game.getChildByName("planet2").gotoAndStop(0);
 				myGame[1].splice(1, 2);
 				myGame[1].splice(9, 5);
@@ -33906,7 +33887,6 @@ if (reversed == null) { reversed = false; }
 				purple_planet.name = "planet2";
 				purple_planet.x = 15;
 				purple_planet.y = 467;
-				//purple_planet.gotoAndStop(0);
 				game.getChildByName("planet2").gotoAndStop(0);
 				myGame[1].splice(1, 1);
 				myGame[1].splice(11, 3);
@@ -33919,7 +33899,6 @@ if (reversed == null) { reversed = false; }
 				purple_planet.name = "planet2";
 				purple_planet.x = 15;
 				purple_planet.y = 465;
-				//purple_planet.gotoAndStop(0);
 				game.getChildByName("planet2").gotoAndStop(0);
 				scoreArray[2][1] = myGame[1].length - 1;
 			}
@@ -33927,9 +33906,7 @@ if (reversed == null) { reversed = false; }
 		
 			//כוכב ורוד
 			var pinkRND = parseInt(Math.random() * ((1 + 5) - (3))) + 3;
-			console.log("ורוד  " + pinkRND);
 			planetQNum[2] = pinkRND;
-		
 		
 			if (pinkRND == 3) {
 				var pink_planet = new lib.pink_planet3();
@@ -33943,9 +33920,8 @@ if (reversed == null) { reversed = false; }
 				myGame[2].splice(1, 2);
 				myGame[2].splice(9, 5);
 				scoreArray[2][2] = myGame[2].length - 1;
-		
-		
 			}
+		
 			if (pinkRND == 4) {
 				var pink_planet = new lib.pink_planet4();
 				game.addChild(pink_planet);
@@ -33953,13 +33929,12 @@ if (reversed == null) { reversed = false; }
 				pink_planet.name = "planet3";
 				pink_planet.x = 16;
 				pink_planet.y = 340;
-				//pink_planet.gotoAndStop(0);
 				game.getChildByName("planet3").gotoAndStop(0);
 				myGame[2].splice(1, 1);
 				myGame[2].splice(11, 3);
 				scoreArray[2][2] = myGame[2].length - 1;
-		
 			}
+		
 			if (pinkRND == 5) {
 				var pink_planet = new lib.pink_planet5();
 				game.addChild(pink_planet);
@@ -33967,14 +33942,12 @@ if (reversed == null) { reversed = false; }
 				pink_planet.name = "planet3";
 				pink_planet.x = 16;
 				pink_planet.y = 396;
-				//pink_planet.gotoAndStop(0);
 				game.getChildByName("planet3").gotoAndStop(0);
 				scoreArray[2][2] = myGame[2].length - 1;
 			}
 		
 			//כוכבת כחול
 			var blueRND = parseInt(Math.random() * ((1 + 5) - (3))) + 3;
-			console.log("כחול  " + blueRND);
 			planetQNum[3] = blueRND;
 		
 			if (blueRND == 3) {
@@ -33984,13 +33957,12 @@ if (reversed == null) { reversed = false; }
 				blue_planet.name = "planet4";
 				blue_planet.x = 19;
 				blue_planet.y = 25;
-				//blue_planet.gotoAndStop(0);
 				game.getChildByName("planet4").gotoAndStop(0);
 				myGame[3].splice(1, 2);
 				myGame[3].splice(9, 5);
 				scoreArray[2][3] = myGame[3].length - 1;
-		
 			}
+		
 			if (blueRND == 4) {
 				var blue_planet = new lib.blue_planet4();
 				game.addChild(blue_planet);
@@ -33998,13 +33970,12 @@ if (reversed == null) { reversed = false; }
 				blue_planet.name = "planet4";
 				blue_planet.x = 20;
 				blue_planet.y = 214;
-				//blue_planet.gotoAndStop(0);
 				game.getChildByName("planet4").gotoAndStop(0);
 				myGame[3].splice(1, 1);
 				myGame[3].splice(11, 3);
 				scoreArray[2][3] = myGame[3].length - 1;
-		
 			}
+		
 			if (blueRND == 5) {
 				var blue_planet = new lib.blue_planet5();
 				game.addChild(blue_planet);
@@ -34012,15 +33983,12 @@ if (reversed == null) { reversed = false; }
 				blue_planet.name = "planet4";
 				blue_planet.x = 18;
 				blue_planet.y = 269;
-		
-				//blue_planet.gotoAndStop(0);
 				game.getChildByName("planet4").gotoAndStop(0);
 				scoreArray[2][3] = myGame[3].length - 1;
 			}
 		
 			//כוכב צהוב
 			var yellowRND = parseInt(Math.random() * ((1 + 5) - (3))) + 3;
-			console.log("צהוב  " + yellowRND);
 			planetQNum[4] = yellowRND;
 		
 		
@@ -34031,12 +33999,12 @@ if (reversed == null) { reversed = false; }
 				yellow_planet.name = "planet5";
 				yellow_planet.x = 17;
 				yellow_planet.y = -91;
-				//yellow_planet.gotoAndStop(0);
 				game.getChildByName("planet5").gotoAndStop(0);
 				myGame[4].splice(1, 2);
 				myGame[4].splice(9, 5);
 				scoreArray[2][4] = myGame[4].length - 1;
 			}
+		
 			if (yellowRND == 4) {
 				var yellow_planet = new lib.yellow_planet4();
 				game.addChild(yellow_planet);
@@ -34044,12 +34012,12 @@ if (reversed == null) { reversed = false; }
 				yellow_planet.name = "planet5";
 				yellow_planet.x = 17;
 				yellow_planet.y = 87;
-				//yellow_planet.gotoAndStop(0);
 				game.getChildByName("planet5").gotoAndStop(0);
 				myGame[4].splice(1, 1);
 				myGame[4].splice(11, 3);
 				scoreArray[2][4] = myGame[4].length - 1;
 			}
+		
 			if (yellowRND == 5) {
 				var yellow_planet = new lib.yellow_planet5();
 				game.addChild(yellow_planet);
@@ -34057,7 +34025,6 @@ if (reversed == null) { reversed = false; }
 				yellow_planet.name = "planet5";
 				yellow_planet.x = 17;
 				yellow_planet.y = 140;
-				//yellow_planet.gotoAndStop(0);
 				game.getChildByName("planet5").gotoAndStop(0);
 				scoreArray[2][4] = myGame[4].length - 1;
 			}
@@ -34067,10 +34034,6 @@ if (reversed == null) { reversed = false; }
 			game.addChild(endBig);
 			game.addChildAt(endBig, 4);
 		
-		
-			//יצירת מטאורים
-			//asteroidFunc();
-		
 			//כפתור סאונד
 			mysound = new lib.soundBtn();
 			game.addChild(mysound);
@@ -34079,8 +34042,6 @@ if (reversed == null) { reversed = false; }
 			mysound.y = 12;
 			mysound.cursor = "pointer";
 			soundPlaying = true;
-			//sound.addEventListener("click", controlMusic);
-		
 		
 			//כפתור עצירת משחק
 			pause = new lib.pauseBtn();
@@ -34089,8 +34050,6 @@ if (reversed == null) { reversed = false; }
 			pause.x = 1153;
 			pause.y = 13;
 			pause.cursor = "pointer";
-			//pause.addEventListener("click", pauseGame);
-		
 		
 			//-------------------------טקסטים
 			//"מד מהירות"
@@ -34138,12 +34097,9 @@ if (reversed == null) { reversed = false; }
 			instructions2.color = "#EEEEEE";
 			instructions2.x = 1155;
 			instructions2.y = 120;
-			//instructions2.textAlign = "center";
 		
 			//הצגת השאלה בבועת דיבור
 			txtQuestion = new createjs.Text();
-			//game.addChild(txtQuestion);
-		
 			txtQuestion.font = "16pt Assistant";
 			txtQuestion.color = "#000000";
 			txtQuestion.lineWidth = 170;
@@ -34151,9 +34107,11 @@ if (reversed == null) { reversed = false; }
 			txtQuestion.textAlign = "center";
 			txtQuestion.name = "buatDiburTxt";
 			txtQuestion.visible = false;
-			
+		
+			//פונקציה הבודקת האם יש תמונה בתוכן השאלה
 			questionTextImage();
 		
+			//הופעת אובייקטים לאחר 5 שניות על מנת להציג את השאלה
 			setTimeout(function () {
 				spaceship.visible = true;
 				myAlien.visible = true;
@@ -34161,32 +34119,23 @@ if (reversed == null) { reversed = false; }
 				txtQuestion.visible = true;
 			}, 5000);
 		
-		
-			//לא דינמית
-			//txtQuestion.text = "שאלה לא דינמית";
-			//question.txtQuestion.text = myGame[0][0];
-		
 			// קריאה לפונקצית טיקר
 			createjs.Ticker.addEventListener("tick", tick);
 		
-		
-			movingPlanetsInterval = setInterval(movingBigPlanets, 10);
+			movingPlanetsInterval = setInterval(movingBigPlanets, 7);
 		
 			startMoving();
+		
+			//קריאה לפונקציית ספירת הזמן
 			var mytimeInterval = setInterval(timeCountFunc, 1000);
-		
 		}
-		
 		
 		
 		function questionTextImage() {
 			game.addChild(txtQuestion);
 			txtQuestion.text = myGame[myPlanets][0][0];
 		
-		
 			if (myGame[myPlanets][0][1] == "0") {
-		
-		
 				txtQuestion.x = 1175;
 				txtQuestion.y = 420;
 		
@@ -34211,41 +34160,35 @@ if (reversed == null) { reversed = false; }
 				QusImage.addEventListener("mouseover", hoverAstImage);
 				QusImage.addEventListener("mouseout", outAstImage);
 		
-		
 			}
 		}
-		
-		var myTime = 0;
 		
 		//פונקציה הבודקת כאשר המשחק מתקיים מכילה בתוכה את הקריאה לתזוזת האסטרואידים ונעצרת כאשר יש מעבר בין שאלות או בעצירת המשחק
 		function startMoving() {
 		
-		
 			//  פונקציה שמחזיקה את פעולת האינטרוול ופועלת רק אם הוא true
 			if (gamePlayer == true) {
-		
 				clearInterval(myAsteroid);
 				myAsteroid = setInterval(moveAsteroid, speedy);
 			}
-		
 		}
 		
+		//משתנה לשמירת הזמן
+		var myTime = 0;
 		var myMinutes = 0;
+		
+		//פונקצייית ספירת הזמן
 		function timeCountFunc() {
 			if (gamePlayer == true) {
 				myTime++;
-				//	console.log(myTime);
 		
 				if (myTime == 60) {
 					myTime = 0;
 					myMinutes++;
-					//		console.log(myMinutes);
 				}
 			}
 		}
 		
-		
-		//window.addEventListener("keydown", keypress);
 		
 		//משתנים גלובליים נוספים לחלק זה של המשחק---------------------------------------------------------------------------//
 		//------------------------------------------------------------------------//
@@ -34272,11 +34215,14 @@ if (reversed == null) { reversed = false; }
 		//משתנה העולה כאשר המשתמש פגע בתשובה לא נכונה
 		var falsePositive = 0;
 		
+		//משתנה השומר את מופע זכוכית המגדלת שעל השאלה
 		var QusSearchPhoto;
 		
+		//משתנה השומר את כמות המסיחים הלא נכונים שנוצרים ברצף
 		var falseForRandom = 0;
+		
+		//משתנה השומר את התוכן של המשתנה הרנדומלי של האסטרואיד הקודם
 		var imTheRandom;
-		var oldRandom;
 		
 		// פונקצייה המבצעת חישובים רנדומליים
 		function RND() {
@@ -34285,28 +34231,17 @@ if (reversed == null) { reversed = false; }
 			asteroidRND = Math.floor((Math.random() * asteroidArray[0].length));
 			rndAnswer = parseInt(Math.random() * ((1 + (myGame[myPlanets].length - 1)) - (1))) + 1;
 		
-		
-		
-		
+			//תנאי הבודק אם נוצר כבר אסטרואיד אחד
 			if (fallAsteroid.length > 0) {
-				//rndAnswer = parseInt(Math.random() * ((1 + (myGame[myPlanets].length - 1)) - (1))) + 1;
-		
-		
 		
 				//תגריל עד שלא תהיה אותו מספר
 				while (rndAnswer == imTheRandom) {
-		
 					rndAnswer = parseInt(Math.random() * ((1 + (myGame[myPlanets].length - 1)) - (1))) + 1;
-		
 				}
 				//אם הוא טעות
 				if (myGame[myPlanets][rndAnswer][1] == "false") {
 		
-		//if(	myGame[myPlanets][rndAnswer][0] != myGame[myPlanets][imTheRandom][0])
-					
 					falseForRandom++;
-		
-					console.log("falseForRandom= " + falseForRandom);
 		
 					//אם הוא גדול מ3
 					if (falseForRandom >= 4) {
@@ -34315,13 +34250,9 @@ if (reversed == null) { reversed = false; }
 		
 						//תגריל עד שתהיה נכון
 						while (myGame[myPlanets][rndAnswer][1] != "true") {
-							console.log("im true")
-		
 							falseForRandom = 0;
 							rndAnswer = parseInt(Math.random() * ((1 + (myGame[myPlanets].length - 1)) - (1))) + 1;
-		
 							while (rndAnswer == imTheRandom) {
-		
 								rndAnswer = parseInt(Math.random() * ((1 + (myGame[myPlanets].length - 1)) - (1))) + 1;
 							}
 						}
@@ -34330,145 +34261,79 @@ if (reversed == null) { reversed = false; }
 				} else {
 					falseForRandom = 0;
 				}
-		
-				//	rndAnswer = parseInt(Math.random() * ((1 + (myGame[myPlanets].length - 1)) - (1))) + 1;
-				console.log("rndAnswer= " + rndAnswer);
-				console.log("imTheRandom= " + imTheRandom);
-				//console.log("oldRandom= " + oldRandom);
-		
-		
-		
-		
 			}
-		
-		
-		
 		}
-		
-		
-		
-		
 		
 		//יצירת אסטרואידים---------------------------------------------------------------------------//
 		//------------------------------------------------------------------------//
 		//------------------------------------------------------------------------//
 		
-		var imageOnAstName;
-		
-		// מיקום של האובייקט הנוצר במערך האסטרואיד
-		var counter = 0;
-		
-		var imageOnAst;
-		var searchPhoto;
-		
 		//פונקציית יצירת האסטרואידים כל זמן מסויים
 		function moveAsteroid() {
+			//שמירת הערך של המשתנה הרנדומלי במשתנה חדש
 			imTheRandom = rndAnswer;
+			//קריאה להגרלה נוספת
 			RND();
 		
-		
-			
-			
+			//יצירת אסטרואיד במיקום רנדומלי ובצורה רנדומלית
 			fallAsteroid[counter] = new(asteroidArray[0][asteroidRND])();
 			fallAsteroid[counter].x = asteroidArray[1][rndX];
 			fallAsteroid.y = -200;
-			//asteroidConteiner.addChild(fallAsteroid[counter]);
-			//asteroidConteiner.addChildAt(fallAsteroid[counter], 3);
+		
+			//הוספת הקונטיינר של האסטרואיד
 			stage.getChildByName("levelNum" + myPlanets).addChild(fallAsteroid[counter]);
 			stage.getChildByName("levelNum" + myPlanets).addChildAt(fallAsteroid[counter], 3);
 			fallAsteroid[counter].name = myGame[myPlanets][rndAnswer][1];
 		
+			//תנאי הבודק אם תוכן האסטרואיד מכיל תמונה או טקסט
 			if (myGame[myPlanets][rndAnswer][2] == "0") {
 				fallAsteroid[counter].txt.text = myGame[myPlanets][rndAnswer][0];
 			} else {
 				//יצירת תמונה דינאמית מהמערך
 				imageOnAst = new(myGame[myPlanets][rndAnswer][0])();
-		
 				fallAsteroid[counter].addChild(imageOnAst);
-				if (mychoice == 1) {
-					fallAsteroid[counter].txt.text = myGame[myPlanets][rndAnswer][2];
-					fallAsteroid[counter].txt.alpha = 0;
 		
-					imageOnAst.scaleX = 0.4;
-					imageOnAst.scaleY = 0.4;
-					imageOnAst.x = 2;
-					imageOnAst.name = myGame[myPlanets][rndAnswer][2];
-					//console.log(imageOnAst.name);
-					searchPhoto = new lib.search();
-					fallAsteroid[counter].addChild(searchPhoto);
-					searchPhoto.scaleX = 0.25;
-					searchPhoto.scaleY = 0.25;
-					searchPhoto.x = 36;
-					searchPhoto.y = 14;
-					imageOnAstName = imageOnAst.name;
-				} else if (mychoice == 2) {
-					fallAsteroid[counter].txt.text = myGame[myPlanets][rndAnswer][2];
-					fallAsteroid[counter].txt.alpha = 0;
-					imageOnAst.scaleX = 0.3;
-					imageOnAst.scaleY = 0.3;
-					searchPhoto = new lib.search();
-					fallAsteroid[counter].addChild(searchPhoto);
-					searchPhoto.scaleX = 0.25;
-					searchPhoto.scaleY = 0.25;
-					searchPhoto.x = 36;
-					searchPhoto.y = 14;
-					imageOnAst.name = myGame[myPlanets][rndAnswer][2];
-					imageOnAstName = imageOnAst.name;
-					console.log(imageOnAstName);
-				}
+				fallAsteroid[counter].txt.text = myGame[myPlanets][rndAnswer][2];
+				fallAsteroid[counter].txt.alpha = 0;
+		
+				imageOnAst.scaleX = 0.4;
+				imageOnAst.scaleY = 0.4;
+				imageOnAst.x = 2;
+				imageOnAst.name = myGame[myPlanets][rndAnswer][2];
+				searchPhoto = new lib.search();
+				fallAsteroid[counter].addChild(searchPhoto);
+				searchPhoto.scaleX = 0.25;
+				searchPhoto.scaleY = 0.25;
+				searchPhoto.x = 36;
+				searchPhoto.y = 14;
 		
 				imageOnAst.addEventListener("mouseover", hoverAstImage);
 				imageOnAst.addEventListener("mouseout", outAstImage);
 		
-		
 			}
-		
-		
-		
-		
 			pgiaaFalse = false;
 			pgiaaTrue = false;
 			counter++;
-		
-		
 		}
 		
-		
-		
-		
-		
+		//מעבר עכבר על תמונה
 		function hoverAstImage(e) {
-		
 		
 			var bigger = e.currentTarget; //יצירת אינסטנס חדש של התמונה
 			bigger.scaleX = 0.9; //פי כמה להגדיל
 			bigger.scaleY = 0.9;
-		
-		
-			//searchPhoto.visible = false;
-		
 		}
 		
+		//יציאה ממעבר עכבר על תמונה
 		function outAstImage(e) {
-		
-		
 			var smaller = e.currentTarget; //יצירת אינסטנס חדש של התמונה
-			smaller.scaleX = 0.3; //פי כמה להגדיל
-			smaller.scaleY = 0.3;
-		
-		
-			//searchPhoto.visible = true;
-		
+			smaller.scaleX = 0.4; //פי כמה להגדיל
+			smaller.scaleY = 0.4;
 		}
 		
-		
-		
-		//var correctPass;
 		
 		//משתנה המחזיק את הטיקר
 		var tickerVar = false;
-		
-		
 		
 		// פונקציית התזוזה טיקר
 		function tick(event) {
@@ -34489,25 +34354,17 @@ if (reversed == null) { reversed = false; }
 				//תזוזת אסטרואיסים 
 				for (var i = 0; i < fallAsteroid.length; i++) {
 		
-					//	scoreFunc();
-					//fallAsteroid[i].name = "imFalling" + i;
 					fallAsteroid[i].y += directionY;
 		
 					if (fallAsteroid[i].y >= 750 && fallAsteroid[i].name == "true") {
 		
 						if (underSpaceship == false) {
 							asteroidVar = i;
-							//console.log("fallAsteroid[i] = " + fallAsteroid[i].name);
 							underSpaceship = true;
-							//	console.log("underSpaceship = "+ underSpaceship)
 							scoreFunc();
-							//game.removeChild(fallAsteroid[i]);
-		
-		
 						}
 		
 					}
-					//stage.getChildByName("imFalling" + i)
 		
 					//בדיקת פגיעה
 					if (spaceship.x < fallAsteroid[i].x + 75 &&
@@ -34515,43 +34372,23 @@ if (reversed == null) { reversed = false; }
 						spaceship.y < fallAsteroid[i].y + 140 &&
 						spaceship.y > fallAsteroid[i].y - 90) {
 						if (fallAsteroid[i].name == "true" && pgiaaTrue == false) {
+							//משתנה השומר את מיקום האסטרואיד בלולאה
 							asteroidVar = i;
-							//imageOnAstName = imageOnAstName + i;
 							fallAsteroid[i].gotoAndStop(1);
-							//fallAsteroid[i].imageOnAst.alpha=0.3;
-		
-							//	setTimeout(function () {
-							//		fallAsteroid[i].removeAllChildren();
-							//	}, 3000);
-		
-		
-							//fallAsteroid[i].removeAllChildren();
-		
-							//myGame[myPlanets][rndAnswer][2] = "1";
-							// imageOnAstName= fallAsteroid[i].imageOnAst.name;
 							pgiaaTrue = true;
-		
 							directionY = 0;
-		
-							//clearInterval(myAsteroid);
-							// פונקציה הבודקת את כמות הנקודות שנענו נכון עד כה
-							asteroidFunc();
-		
+							asteroidSuccessPositiveFunc();
 		
 						} else if (fallAsteroid[i].name == "false" && pgiaaFalse == false) {
 							asteroidVar = i;
 							fallAsteroid[i].gotoAndStop(2);
 							pgiaaFalse = true;
-							//עובד רק בפעם הראשונה
 							falsteroidFalseFunc();
-							//spaceship.gotoAndStop(1);
-							//myAlien.gotoAndStop(2);
 							scoreFunc();
 						}
 					}
 				}
 			}
-		
 		}
 		
 		
@@ -34568,92 +34405,44 @@ if (reversed == null) { reversed = false; }
 		}
 		
 		
-		
 		//בדיקת תשובות נכונות---------------------------------------------------------------------------//
 		//------------------------------------------------------------------------//
 		//------------------------------------------------------------------------//
 		
 		
-		
-		// משתנה הבודק האם כל התשובות הנכונות נבחרו לצורך מעבר לשאלה הבאה
-		var maxAnswers = false;
-		
-		//משתנה לצורך מיקום האסטרואידים במערך
-		var asteroidVar;
-		
-		
-		
-		
-		
-		
 		// פונקצייה לבדיקת כמות התשובות הנכונות
-		function asteroidFunc() {
+		function asteroidSuccessPositiveFunc() {
 			if (fallAsteroid[asteroidVar].name == "true") {
 				var myPositive = createjs.Sound.play("positive");
-				//פונקציית הצלחה
+				//משוב להצלחה
 				myAlien.gotoAndStop(1);
 		
-				//asteroidFunc();
-				//nextQusPlanets();
-				//createjs.Ticker.addEventListener("tick", tick);
 				if (myAnswer < planetQNum[myPlanets] - 1) {
-		
 					clearInterval(myAsteroid);
 					myAnswer++;
-		
-					console.log("myPlanets " + myPlanets);
-					console.log("myAnswer " + myAnswer);
-		
-					//puaseUpDown = false;
 					gamePlayer = false;
-		
-					//stage.getChildByName("levelNum" + myPlanets).fallAsteroid[asteroidVar].removeChild(imageOnAst);
-		
 					//קריאה להמשך נפילת האסטרואידים לאחר מס שניות
 					var myPause = setTimeout(truePause, 2500);
-		
 					answersFunc();
 		
 					for (var i = 0; i < myGame[myPlanets].length; i++) {
 						if (fallAsteroid[asteroidVar].txt.text == myGame[myPlanets][i][0] || fallAsteroid[asteroidVar].txt.text == myGame[myPlanets][i][2]) {
-		
 							myGame[myPlanets].splice(i, 1);
-		
-							//if (myGame[myPlanets][i][2] == "0") {
-							//stage.getChildByName("levelNum" + myPlanets).removeChild(fallAsteroid[asteroidVar]);
-							//}
-							console.log("boom");
-							//console.log(stage.getChildByName(myGame[myPlanets][i][2]));
-							console.log(imageOnAstName);
-							console.log(myGame[myPlanets]);
-							//console.log(i);
-							//console.log(myGame[myPlanets][i][2]);
 						}
-		
-		
 					}
-		
-		
-		
-		
 		
 				}
 				//אם יש מקסימום תשובות נכונות תפסיק
 				else {
 					maxAnswers = true;
 					gamePlayer = false;
-					//puaseUpDown = false;
 					clearInterval(myAsteroid);
 					answersFunc();
 					clearlevel();
 					speedUpDown();
-					//movingBigPlanets();
 				}
 			}
-		
 		}
-		
-		
 		
 		//המשך ניגון המשחק
 		function truePause() {
@@ -34666,7 +34455,6 @@ if (reversed == null) { reversed = false; }
 				directionY = numY;
 				clearInterval(myAsteroid);
 				speedUpDown();
-				//myAsteroid = setInterval(moveAsteroid, speedy);
 				startMoving();
 		
 			} else {
@@ -34675,15 +34463,9 @@ if (reversed == null) { reversed = false; }
 		}
 		
 		
-		
-		
 		//שמירת ניקוד---------------------------------------------------------------------------//
 		//------------------------------------------------------------------------//
 		//------------------------------------------------------------------------//
-		
-		
-		
-		
 		
 		
 		//מערך לשמירת הנקודות לכל שאלה מכל השאלות
@@ -34697,138 +34479,84 @@ if (reversed == null) { reversed = false; }
 			//mesihim
 			[]
 		
-		
 		];
 		
 		
 		//פונקציה הבודקת אם המשתמש פספס תשובה נכונה או פגע בתשובה שגויה
 		function scoreFunc() {
-			//spaceship.gotoAndStop(0);
-			//myAlien.gotoAndStop(0);
-		
-		
-			console.log("fallAsteroid[asteroidVar] = " + fallAsteroid[asteroidVar].name);
-		
-			//console.log("underSpaceship = "+ underSpaceship)
 			if (gamePlayer == true) {
 		
 				if (underSpaceship == true) {
 					fallAsteroid[asteroidVar].name = "fisfus";
 					falseNegative++;
 					underSpaceship = false;
-		
 					scoreArray[0][myPlanets] = falseNegative;
-		
 				}
 				if (pgiaaFalse == true) {
 					fallAsteroid[asteroidVar].name = "mistake";
 					falsePositive++;
 					var myNegative = createjs.Sound.play("negative");
 					pgiaaFalse = false;
-					//console.log("falsePositive  " + falsePositive);
 					scoreArray[1][myPlanets] = falsePositive;
-					//console.log(scoreArray);
 				}
-		
 			}
 		}
-		
-		
-		
 		
 		
 		//מקשי מקלדת---------------------------------------------------------------------------//
 		//------------------------------------------------------------------------//
 		//------------------------------------------------------------------------//
 		
-		
-		
-		
+		//פונקציית מקשי מקלדת
 		function keypress(e) {
 			createjs.Ticker.paused = false;
+			//ימינה
+			if (e.keyCode == 39) {
+				if (spaceship.x > 985) {
+					directionX = 0;
+				} else {
+					directionX = 9;
+				}
+			}
 		
-			
-				//ימינה
-				if (e.keyCode == 39) {
-					if (spaceship.x > 985) {
-						directionX = 0;
-					} else {
-						directionX = 9;
-					}
+			// שמאלה
+			if (e.keyCode == 37) {
+				if (spaceship.x < 110) {
+					directionX = 0;
+				} else {
+					directionX = -9;
+				}
+			}
+			//תנאי הבודק שהמשחק מתקיים
+			if (gamePlayer == true) {
+		
+				//למעלה
+				if (e.keyCode == 38 && directionY <= 5) {
+					directionY = directionY + 1;
+					directionX = 0;
+					speedUpDown();
 				}
 		
-				// שמאלה
-				if (e.keyCode == 37) {
-					if (spaceship.x < 110) {
-						directionX = 0;
-					} else {
-						directionX = -9;
-					}
+				//למטה
+				if (e.keyCode == 40 && directionY >= 2) {
+					directionY = directionY - 1;
+					directionX = 0;
+					speedUpDown();
 				}
+			}
 		
+			if (e.keyCode == 32) {
+				gamePlayer = false;
+				finalScore();
+				pauseGame();
+			}
 		
-				if (gamePlayer == true) {
-		
-					//scoreFunc();
-		
-					//למעלה
-					if (e.keyCode == 38 && directionY <= 5) {
-						//if (directionY <= 5) {
-						directionY = directionY + 1;
-						//numY = directionY;
-						directionX = 0;
-						speedUpDown();
-						//}
-					}
-		
-					//למטה
-					if (e.keyCode == 40 && directionY >= 2) {
-						//if (directionY >= 2) {
-						directionY = directionY - 1;
-						//numY = directionY;
-						directionX = 0;
-						speedUpDown();
-						//}
-					}
-				}
-		
-		
-				//alert(e.keyCode);
-		
-				if (e.keyCode == 32) {
-					console.log("space");
-					gamePlayer = false;
-					finalScore();
-					pauseGame();
-				}
-		
-				if (e.keyCode == 13 && gamePlayer == true) {
-					tickerVar = true;
-		
-					startMoving();
-				}
-				//-------- בדיקה שלנו
-				if (e.keyCode == 88) {
-					finaleScene();
-					stage.removeChild(game);
-				}
-		
-				if (e.keyCode == 67) {
-					finalScore();
-				}
-		
-		
-				//האות ח
-				if (e.keyCode == 74) {
-					chooseAlienColor();
-				}
-			
 		}
 		
-		
+		//משתנה ליצירת מופע מסך העצירה
 		var pauseGameVar = new lib.panelsOnTheGame();
-		
-		
+		 
+		//פונקציית עצירת משחק
 		function pauseGame() {
 			gamePlayer = false;
 			tickerVar = false;
@@ -34838,22 +34566,18 @@ if (reversed == null) { reversed = false; }
 			pauseGameVar.gotoAndStop(alienVar);
 			pauseGameVar.x = 640;
 			pauseGameVar.y = 90;
-			controlMusic();
-			//stopscreen[alienVar]
-		
+			createjs.Sound.muted = true;
 			spaceship.visible = false;
 			pauseGameVar.BTN_unStopGame.addEventListener("click", keepMooving);
-		
 			pauseGameVar.BTN_unStopGame.cursor = "pointer";
 		
-			//לעצור אינטרוול ולהמשיך
 		}
 		
-		
-		
+		//פונקציית המשך משחק לאחר השהייה
 		function keepMooving() {
 			game.removeChild(pauseGameVar);
 			stage.getChildByName("levelNum" + myPlanets).visible = true;
+			createjs.Sound.muted = false;
 			gamePlayer = true;
 			tickerVar = true;
 			spaceship.visible = true;
@@ -34861,82 +34585,49 @@ if (reversed == null) { reversed = false; }
 			controlMusic();
 		}
 		
-		
-		
+		//פונקציית שליטה בסאונד
 		function controlMusic(event) {
 			if (soundPlaying == true) {
 				createjs.Sound.muted = true;
 				soundPlaying = false;
-				//gameMusic = createjs.Sound.stop("mainMusic");
 				mysound.gotoAndStop(1);
 			} else {
 				createjs.Sound.muted = false;
 				soundPlaying = true;
-				//gameMusic = createjs.Sound.play("mainMusic");
 				mysound.gotoAndStop(0);
 			}
 		}
 		
-		
 		//פונקציה לתזוזת מד המהירות
 		function speedUpDown() {
-			//scoreFunc();
+		
 			if (directionY == 5) {
 				speedBoard.gotoAndStop(4);
-				//LittleStars.gotoAndStop(5);
-				//clearInterval(myAsteroid);
 				numY = 5;
 				speedy = 3000;
-				startMoving();
-				//scoreFunc();
-		
 			}
 			if (directionY == 4) {
 				speedBoard.gotoAndStop(3);
-				//LittleStars.gotoAndStop(4);
-				//clearInterval(myAsteroid);
 				numY = 4;
 				speedy = 4000;
-				startMoving();
-				//scoreFunc();
-		
 			}
 			if (directionY == 3) {
 				speedBoard.gotoAndStop(2);
-				//LittleStars.gotoAndStop(3);
-				//clearInterval(myAsteroid);
 				numY = 3;
 				speedy = 6000;
-				startMoving();
-				//scoreFunc();
-		
 			}
 			if (directionY == 2) {
 				speedBoard.gotoAndStop(1);
-				//LittleStars.gotoAndStop(2);
-				//clearInterval(myAsteroid);
 				numY = 2;
 				speedy = 8000;
-				startMoving();
-				//	scoreFunc();
-		
-		
 			}
 			if (directionY == 1) {
 				speedBoard.gotoAndStop(0);
-				//Litspeedy = 3000;tleStars.gotoAndStop(1);
-				//clearInterval(myAsteroid);
 				numY = 1;
 				speedy = 9000;
-				startMoving();
-				//	scoreFunc();
-		
 			}
-			//scoreFunc();
+			startMoving();
 		}
-		
-		
-		
 		
 		
 		// בעת שחרור הלחיצה על מקשי המקלדת, הטיקר של החללית יפסיק
@@ -34944,14 +34635,13 @@ if (reversed == null) { reversed = false; }
 		
 		function releaseKeypress(e) {
 			createjs.Ticker.paused = true;
-			
+		
 		}
 		
 		
 		//כוכבי לכת גדולים וקטנים---------------------------------------------------------------------------//
 		//------------------------------------------------------------------------//
 		//------------------------------------------------------------------------//
-		
 		
 		
 		// משתנים לצורך העלאת נקודות
@@ -34970,7 +34660,6 @@ if (reversed == null) { reversed = false; }
 			}
 			if (myPlanets == 1) {
 				game.getChildByName("planet1").gotoAndStop(a + 2);
-		
 				b++;
 				game.getChildByName("planet2").gotoAndStop(b);
 			}
@@ -34992,29 +34681,22 @@ if (reversed == null) { reversed = false; }
 		}
 		
 		
-		
 		// פונקציה לתזוזת הכוכבים בתחילת ובסוף שאלה
 		function movingBigPlanets() {
 		
 			movingPlanets.gotoAndStop(myPlanets + 1);
 		
 			if (myAnswer == planetQNum[myPlanets] - 1) {
-		
 				movingPlanetSpeed = 2;
 				if (movingPlanets.y <= -200) {
-		
 					movingPlanets.y += movingPlanetSpeed;
 				} else {
 					movingPlanetSpeed = 0;
 				}
-		
 			}
 			if (maxAnswers == true) {
 				gamePlayer = false;
-		
 				movingPlanetSpeed = 2;
-		
-		
 				spaceship.x = 535;
 				spaceship.y = 240;
 		
@@ -35022,7 +34704,6 @@ if (reversed == null) { reversed = false; }
 					movingPlanets.y += movingPlanetSpeed;
 				} else {
 					movingPlanetSpeed = 0;
-		
 					caftor.addEventListener("click", nextLevel);
 					clearInterval(movingPlanetsInterval);
 				}
@@ -35030,13 +34711,9 @@ if (reversed == null) { reversed = false; }
 		}
 		
 		
-		
-		
-		
 		//איפוס וניקיון---------------------------------------------------------------------------//
 		//------------------------------------------------------------------------//
 		//------------------------------------------------------------------------//
-		
 		
 		
 		//משתנה המחזיק את הכפתור במעבר בין שאלות
@@ -35044,7 +34721,6 @@ if (reversed == null) { reversed = false; }
 		
 		// פונקציה המנקה את הבמה מהאובייקטים של השאלה הנוכחית
 		function clearlevel() {
-		
 			pgiaaTrue = false;
 		
 			// ניקוי הטקסט מהבועת דיבור
@@ -35055,29 +34731,19 @@ if (reversed == null) { reversed = false; }
 				//ניקוי תמונה בבועת דיבור
 				question.removeChild(QusImage);
 				question.removeChild(QusSearchPhoto);
-		
 			}
 		
-		
 			question.betweenQues_Text.text = "כל הכבוד! הצלחנו לבחור את התשובות הנכונות והתקדמנו  !הביתה";
-		
-		
-		
+			
+			//שמירת המהירות שהמשתמש שיחק בה
 			directionY = numY;
 		
-			// עצירת הזמן
-			// מעבר לפריים האחרון בסימבול של הכדורים
-		
-		
-			// איפוס myAnswer
+			// איפוס משתנים
 			myAnswer = 0;
 			counter = 0;
 		
-		
 			//ניקוי הקונטיינר של האסטרואידים
 			stage.removeChild(stage.getChildByName("levelNum" + myPlanets));
-		
-		
 		
 			// יצירת כפתור זמני לצורך בדיקה
 			caftor = new lib.caftor();
@@ -35085,20 +34751,20 @@ if (reversed == null) { reversed = false; }
 			caftor.y = 500;
 			caftor.cursor = "pointer";
 		
-			if (myPlanets == 3){
+			//תנאי לשינוי נראות הכפתור בסוף המשחק
+			if (myPlanets >= 3) {
 				caftor.gotoAndStop(1);
 			}
 		
+			//הופעת הכפתור לאחר 3 שניות
 			setTimeout(function () {
 				game.addChild(caftor);
 				movingPlanets.goodGobTxt.text = "!כל הכבוד";
-			}, 3000);
-		
-		
+			}, 4000);
 		}
 		
-		
-		var NISUI;
+		//משתנה לצורך שמירת שם האינסטנס שבתוך סימבול כוכבי הלכת
+		var planetInstanceName;
 		
 		// פונקציה המתרחשת בלחיצה על הכפתור בעת סיום האניצמציה במעברי השאלות
 		function nextLevel() {
@@ -35106,79 +34772,50 @@ if (reversed == null) { reversed = false; }
 			game.getChildByName("buatDibur").visible = false;
 			game.getChildByName("buatDiburTxt").visible = false;
 		
-		
-		
-		
 			if (myPlanets < 4) {
 				myPlanets++;
 				question.gotoAndStop(myPlanets);
 		
 				if (alienVar == 0) {
-					NISUI = myPlanets + 6;
+					planetInstanceName = myPlanets + 6;
 				} else {
-					NISUI = myPlanets + 12;
+					planetInstanceName = myPlanets + 12;
 				}
-		
-		
 				//הצגת השאלה
 				if (myGame[myPlanets][0][1] == "0") {
-					movingPlanets["planet" + NISUI].pink_alian_show_ques.question_present.text = myGame[myPlanets][0][0];
+					movingPlanets["planet" + planetInstanceName].pink_alian_show_ques.question_present.text = myGame[myPlanets][0][0];
 				} else {
-					movingPlanets["planet" + NISUI].pink_alian_show_ques.question_present.text = myGame[myPlanets][0][0];
+					movingPlanets["planet" + planetInstanceName].pink_alian_show_ques.question_present.text = myGame[myPlanets][0][0];
 					QusImage = new(myGame[myPlanets][0][1])();
-					movingPlanets["planet" + NISUI].pink_alian_show_ques.addChild(QusImage);
+					movingPlanets["planet" + planetInstanceName].pink_alian_show_ques.addChild(QusImage);
 					QusImage.x = 190;
 					QusImage.y = 150;
 					QusImage.scaleX = 0.5;
 					QusImage.scaleY = 0.5;
-		
 					QusSearchPhoto = new lib.search();
-					movingPlanets["planet" + NISUI].pink_alian_show_ques.addChild(QusSearchPhoto);
+					movingPlanets["planet" + planetInstanceName].pink_alian_show_ques.addChild(QusSearchPhoto);
 					QusSearchPhoto.scaleX = 0.25;
 					QusSearchPhoto.scaleY = 0.25;
 					QusSearchPhoto.x = 200;
 					QusSearchPhoto.y = 140;
-		
 					QusImage.addEventListener("mouseover", hoverAstImage);
 					QusImage.addEventListener("mouseout", outAstImage);
-		
 				}
 		
-		
-		
-		
-		
 				stage.addChild(stage.getChildByName("levelNum" + myPlanets));
-		
-		
-		
-		
 				answersFunc();
 				myAnswer = 0;
 				falseNegative = 0;
 				falsePositive = 0;
 				falseForRandom = 0;
-		
-		
-				//clearInterval(myAsteroid);
-				//myAsteroid = setInterval(moveAsteroid, speedy);
 				game.removeChild(caftor);
-		
-		
-				movingPlanets.gotoAndPlay(NISUI);
-				//movingPlanets.planet.pink_alian_show_ques.question_present.text=myGame[myPlanets][0];
-		
-		
-				//להכניס למשתנה את השם של האינסטנס ולהעלות אותו
-		
+				movingPlanets.gotoAndPlay(planetInstanceName);
 				stage.removeChild(spaceShipContainer);
+				
+				//קריאה לחזרה לאיפוס למשחק לאחר אנימצית הצגת השאלה
 				var myPause = setTimeout(positionReset, 7000);
 		
-				//ללכת לחייזר שמחזיק את השלט בגדול
-		
-		
 			} else {
-		
 				stage.removeChild(game);
 				//קריאה לפונקציה שתפעיל אאת אנימציית הסיום וחישוב נקודות		
 				finaleScene();
@@ -35187,7 +34824,7 @@ if (reversed == null) { reversed = false; }
 		
 		//איפוס המיקומים והחזרת אובייקטים למצב נראות לאחר מעבר בין שאלות
 		function positionReset() {
-			movingPlanets.goodGobTxt.text ="";
+			movingPlanets.goodGobTxt.text = "";
 			questionTextImage();
 			maxAnswers = false;
 			gamePlayer = true;
@@ -35195,23 +34832,14 @@ if (reversed == null) { reversed = false; }
 			movingPlanets.gotoAndStop(myPlanets + 1);
 			movingPlanets.x = 585;
 			movingPlanets.y = -400;
-		
-		
 			stage.addChild(spaceShipContainer);
 			spaceship.x = 525;
 			spaceship.y = 540;
-		
-		
 			question.betweenQues_Text.text = "";
 			game.getChildByName("myAlienName").visible = true;
 			game.getChildByName("buatDibur").visible = true;
 			game.getChildByName("buatDiburTxt").visible = true;
-		
-		
-		
 			movingPlanetsInterval = setInterval(movingBigPlanets, 10);
-		
-		
 		}
 		
 		
@@ -35241,35 +34869,28 @@ if (reversed == null) { reversed = false; }
 		
 			//משתנה שישמור את החישוב הסופי
 			userFinalScore = Math.floor((100 * (1 - (m[0] / n[0]))) / 5) + ((100 * (1 - (m[1] / n[1]))) / 5) + ((100 * (1 - (m[2] / n[2]))) / 5) + ((100 * (1 - (m[3] / n[3]))) / 5) + ((100 * (1 - (m[4] / n[4]))) / 5);
-		
-			console.log("m = " + m + " n = " + n);
-			console.log("userFinalScore" + userFinalScore);
-			console.log("wrong " + wrong);
 		}
-		
 		
 		
 		//סיווםםםםםם---------------------------------------------------------------------------//
 		//------------------------------------------------------------------------//
 		//------------------------------------------------------------------------//
 		
+		//משתנה המחזיק את מופע אנימציית הסיום
 		var endingAnimation;
 		
+		//פונקציית אנימציית הסיום והצגת מסך הסיום
 		function finaleScene() {
 			var gameMusic = createjs.Sound.stop("mainMusic");
 			var welcomeMusic = createjs.Sound.play("openEnd");
-		
 			gamePlayer = false;
 			clearInterval(timeCountFunc, 1000);
 			clearInterval(myAsteroid);
 			//קריאה לפונקציה לחישוב הנקודות הסופיות
 			finalScore();
-		
 			stage.removeChild(movingPlanets);
-		
 			stage.removeChild(stage.getChildByName("levelNum" + myPlanets));
 			stage.removeChild(stage.getChildByName("spaceShipContainerName"));
-		
 		
 			endingAnimation = new lib.endingAnimation();
 			stage.addChild(endingAnimation);
@@ -35293,20 +34914,18 @@ if (reversed == null) { reversed = false; }
 			endingAnimation["ending_animation" + alienVar].finishBTN.cursor = "pointer";
 		}
 		
-		
+		//פונקציה למשחק חדש עם אותו נושא
 		function playAgainFunc() {
-			console.log("playAgainFunc");
 			resetAllGame();
 			startGame();
 		}
 		
+		//פונקציה השולחת חזרה למסך הפתיחה
 		function finishFunc() {
-			console.log("finishFunc");
 			resetAllGame();
 		
 			// יצירת קונטיינר לעמוד הפתיחה
 			stage.addChild(gameOpening);
-		
 			gameOpening.removeChild(whiteWave);
 			stage.removeChild(mainWaves);
 			gameOpening.removeChild(fallingStars);
@@ -35315,43 +34934,44 @@ if (reversed == null) { reversed = false; }
 		
 			// קריאה לפונקציית יצירת עמוד הפתיחה של המשחק
 			createOpeninGame();
-		
 		}
 		
-		
+		//פונקציה המאפסת את כל המשתנים במשחק
 		function resetAllGame() {
 			var welcomeMusic = createjs.Sound.stop("openEnd");
 			stage.removeChild(endingAnimation);
-		
-		
 			stage.removeChild(asteroidConteiner);
 		
 			//איפוס משתנים מספריים----------------------------------
 			myPlanets = 0;
 		
+			//איפוס מד התקדמות
 			a = 0;
 			b = 0;
 			c = 0;
 			d = 0;
 			e = 0;
 		
+			//איפוס מהירות יצירת אסטרואידים
 			speedy = 6000;
+			
+			//איפוס מהירות כללית
 			directionY = 3;
+			
+			//איפוס המשתנה השומר את המהירות בין השאלות
 			numY = 3;
 		
-			myMinutes = 0;
+			//איפוס הזמנים והניקוד -------------------
+			myMinutes = 0;	
 			myTime = 0;
-		
 			falseNegative = 0;
-		
 			falseForRandom = 0;
-		
 			//משתנה לחישוב הציון הסופי
 			userFinalScore = 0;
-		
 			//משתנה לחישוב סהכ הטעויות
 			wrong = 0;
-		
+			
+			//איפוס המיקום במערך האסטרואידים
 			counter = 0;
 			//איפוס משתנים בוליאנים-------------------------------
 			gamePlayer = false;
@@ -35361,7 +34981,7 @@ if (reversed == null) { reversed = false; }
 			underSpaceship = false;
 			tickerVar = false;
 			maxAnswers = false;
-		
+			soundPlaying = false;
 			//איפוס מערכים------------------------------------
 		
 			//מספר המסיחים בכל שאלה
@@ -35381,19 +35001,14 @@ if (reversed == null) { reversed = false; }
 				//mesihim
 				[]
 		
-		
 			];
-		
 		
 			endingAnimation["ending_animation" + alienVar].score.text = "";
 			endingAnimation["ending_animation" + alienVar].Errors.text = "";
 			endingAnimation["ending_animation" + alienVar].Time.text = "";
-		
+			
+			//החזרת המערך למצב הראשוני
 			myGame = newArray;
-		
-		
-		
-		
 		}
 		playSound("mypositive");
 	}
@@ -35415,12 +35030,12 @@ lib.properties = {
 	opacity: 1.00,
 	webfonts: {},
 	manifest: [
-		{src:"images/SpaceHitProject_atlas_1.png?1613126447817", id:"SpaceHitProject_atlas_1"},
-		{src:"sounds/mypositive.mp3?1613126450300", id:"mypositive"},
-		{src:"https://code.jquery.com/jquery-3.4.1.min.js?1613126450300", id:"lib/jquery-3.4.1.min.js"},
-		{src:"components/sdk/anwidget.js?1613126450300", id:"sdk/anwidget.js"},
-		{src:"components/ui/src/css.js?1613126450300", id:"an.CSS"},
-		{src:"components/ui/src/combobox.js?1613126450300", id:"an.ComboBox"}
+		{src:"images/SpaceHitProject_atlas_1.png?1613132659753", id:"SpaceHitProject_atlas_1"},
+		{src:"sounds/mypositive.mp3?1613132662160", id:"mypositive"},
+		{src:"https://code.jquery.com/jquery-3.4.1.min.js?1613132662160", id:"lib/jquery-3.4.1.min.js"},
+		{src:"components/sdk/anwidget.js?1613132662160", id:"sdk/anwidget.js"},
+		{src:"components/ui/src/css.js?1613132662160", id:"an.CSS"},
+		{src:"components/ui/src/combobox.js?1613132662160", id:"an.ComboBox"}
 	],
 	preloads: []
 };

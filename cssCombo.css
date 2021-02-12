@@ -1,6 +1,6 @@
 #comboBox
 {
-font-size:20px;
+font-size:25px;
 color:#3C1C58;
 border-color:#3C1C58;
 font-family:Assistant;
@@ -10,7 +10,7 @@ direction: rtl;
 
 #comboBox > option
 {
-font-size:20px;
+font-size:25px;
 color:#3C1C58;
 border-color:#3C1C58;
 font-family:Assistant;
