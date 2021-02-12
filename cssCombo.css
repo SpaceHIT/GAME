@@ -1,19 +1,18 @@
-#comboBox
-{
-font-size:14px;
-color:#3C1C58;
-border-color:#3C1C58;
-font-family:Assistant;
-font-weight: bold;
-direction: rtl;
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap');
+#comboBox {
+    font-size: 14px;
+    color: #3C1C58;
+    border-color: #3C1C58;
+    font-family: Assistant;
+    font-weight: bold;
+    direction: rtl;
 }
 
-#comboBox > option
-{
-font-size:14px;
-color:#3C1C58;
-border-color:#3C1C58;
-font-family:Assistant;
-font-weight: bold;
-direction: rtl;
+#comboBox>option {
+    font-size: 14px;
+    color: #3C1C58;
+    border-color: #3C1C58;
+    font-family: Assistant;
+    font-weight: bold;
+    direction: rtl;
 }
