@@ -1,0 +1,19 @@
+#comboBox
+{
+font-size:25px;
+color:#3C1C58;
+border-color:#3C1C58;
+font-family:Assistant;
+font-weight: bold;
+direction: rtl;
+}
+
+#comboBox > option
+{
+font-size:25px;
+color:#3C1C58;
+border-color:#3C1C58;
+font-family:Assistant;
+font-weight: bold;
+direction: rtl;
+}
