@@ -5734,7 +5734,7 @@ if (reversed == null) { reversed = false; }
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.orangePlanet_opening_inside, new cjs.Rectangle(-128.9,-134.4,257.8,257.8), null);
+}).prototype = getMCSymbolPrototype(lib.orangePlanet_opening_inside, new cjs.Rectangle(-128.9,-134.7,257.8,257.9), null);
 
 
 (lib.housePlanet_opening_inside = function(mode,startPosition,loop,reversed) {
@@ -17253,7 +17253,7 @@ if (reversed == null) { reversed = false; }
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.EA_OrangePlanet_Inside, new cjs.Rectangle(-157.3,-159.6,314.6,314.6), null);
+}).prototype = getMCSymbolPrototype(lib.EA_OrangePlanet_Inside, new cjs.Rectangle(-157.3,-159.8,314.6,314.6), null);
 
 
 (lib.EA_HomePlanetEnding = function(mode,startPosition,loop,reversed) {
@@ -18499,7 +18499,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-170.6,-223.5,346.4,446.4);
+p.nominalBounds = new cjs.Rectangle(-170.7,-223.5,346.5,446.4);
 
 
 (lib.caftor = function(mode,startPosition,loop,reversed) {
@@ -19389,7 +19389,7 @@ if (reversed == null) { reversed = false; }
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.Inside_happy_blue_alien, new cjs.Rectangle(-49.1,-43.5,97.6,87.3), null);
+}).prototype = getMCSymbolPrototype(lib.Inside_happy_blue_alien, new cjs.Rectangle(-49.2,-43.4,97.5,87.19999999999999), null);
 
 
 (lib.blue_alien1 = function(mode,startPosition,loop,reversed) {
@@ -19589,7 +19589,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-54.1,-60.8,107.30000000000001,122.69999999999999);
+p.nominalBounds = new cjs.Rectangle(-54.1,-60.7,107.2,122.7);
 
 
 (lib.blue_alien_arm2 = function(mode,startPosition,loop,reversed) {
@@ -19796,7 +19796,7 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Layer_1
-	this.instance = new lib.an_CSS({'id': '', 'href':'assets/%5CUsers%5Csapir%5COneDrive%5Cשולחן%20העבודה%5Cפרוייקט%5C17.1%5CcssCombo.css'});
+	this.instance = new lib.an_CSS({'id': '', 'href':'https://spacehit.github.io/GAME/cssCombo.css'});
 
 	this.instance.setTransform(1262.9,485.95,1,1,0,0,0,50,11);
 
@@ -19837,7 +19837,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(0,-5.8,257.8,257.9);
+p.nominalBounds = new cjs.Rectangle(0,-6,257.8,257.9);
 
 
 (lib.housePlanet_opening = function(mode,startPosition,loop,reversed) {
@@ -23192,7 +23192,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-324.1,-267,627,529.6);
+p.nominalBounds = new cjs.Rectangle(-324.1,-267.3,627,529.7);
 
 
 (lib.spaceship_game_1 = function(mode,startPosition,loop,reversed) {
@@ -23933,7 +23933,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-342.5,-263.5,663.4,529.2);
+p.nominalBounds = new cjs.Rectangle(-342.5,-263.4,663.4,529.0999999999999);
 
 
 (lib.YellowAlien1_1 = function(mode,startPosition,loop,reversed) {
@@ -24193,7 +24193,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-324.2,-269.9,621.4,530.2);
+p.nominalBounds = new cjs.Rectangle(-324.2,-270.2,621.4,530.3);
 
 
 (lib.RocketWithAlien_Pink = function(mode,startPosition,loop,reversed) {
@@ -24506,7 +24506,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-151.4,-159.8,326.5,326.5);
+p.nominalBounds = new cjs.Rectangle(-151.4,-160,326.5,326.5);
 
 
 (lib.EA_BluePlanet_1 = function(mode,startPosition,loop,reversed) {
@@ -24940,7 +24940,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-334.1,-261.7,650.2,528.8);
+p.nominalBounds = new cjs.Rectangle(-334.1,-261.6,650.2,528.8);
 
 
 (lib.ChooseAlien = function(mode,startPosition,loop,reversed) {
@@ -25047,7 +25047,7 @@ if (reversed == null) { reversed = false; }
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.ChooseAlien, new cjs.Rectangle(-170.6,-335.7,746.6,651.9), null);
+}).prototype = getMCSymbolPrototype(lib.ChooseAlien, new cjs.Rectangle(-170.7,-335.7,746.7,651.9), null);
 
 
 (lib.Asteroid3_positive_animation = function(mode,startPosition,loop,reversed) {
@@ -29548,7 +29548,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-1,2.1,107.5,122.9);
+p.nominalBounds = new cjs.Rectangle(-1,2.2,107.5,122.7);
 
 
 (lib.planets_opening_inside = function(mode,startPosition,loop,reversed) {
@@ -29886,7 +29886,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-56.3,-60.8,107.3,122.5);
+p.nominalBounds = new cjs.Rectangle(-56.3,-60.7,107.3,122.4);
 
 
 (lib.StopGame_blue_alien_animation = function(mode,startPosition,loop,reversed) {
@@ -31151,7 +31151,7 @@ if (reversed == null) { reversed = false; }
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.EA_HomePlanet_Pink, new cjs.Rectangle(-451.2,-437,902.4,763.2), null);
+}).prototype = getMCSymbolPrototype(lib.EA_HomePlanet_Pink, new cjs.Rectangle(-451.2,-437.1,902.4,763.3), null);
 
 
 (lib.Ending_Animation_BlueAlien = function(mode,startPosition,loop,reversed) {
@@ -31726,7 +31726,7 @@ if (reversed == null) { reversed = false; }
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.EA_Pink_HomePlanetEndingWithAliens, new cjs.Rectangle(-465.3,-387.8,953.4000000000001,719.4000000000001), null);
+}).prototype = getMCSymbolPrototype(lib.EA_Pink_HomePlanetEndingWithAliens, new cjs.Rectangle(-465.3,-387.7,953.4000000000001,719.3), null);
 
 
 (lib.StopGame_blue_alien = function(mode,startPosition,loop,reversed) {
@@ -32865,7 +32865,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-70,-71,140,140.1);
+p.nominalBounds = new cjs.Rectangle(-70,-71.1,140,140.1);
 
 
 // stage content:
@@ -32900,7 +32900,9 @@ if (reversed == null) { reversed = false; }
 			createjs.Sound.registerSound("sounds/mynegative.mp3", "negative");
 		}
 		
-		
+		var mainBG = new lib.mainBackground();
+		stage.addChild(mainBG);
+		stage.addChildAt(mainBG, 0);
 		
 		//הטמעת פונטים
 		WebFontConfig = {
@@ -32909,13 +32911,11 @@ if (reversed == null) { reversed = false; }
 			}
 		};
 		
-		var mainBG = new lib.mainBackground();
-		stage.addChild(mainBG);
-		stage.addChildAt(mainBG, 0);
+		
 		
 		(function () {
 			var wf = document.createElement('script');
-			wf.src = ('https' == document.location.protocol ? 'https' : 'http') + '://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+			wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
 			wf.type = 'text/javascript';
 			wf.async = true;
 			var s = document.getElementsByTagName('script')[0];
@@ -35415,12 +35415,12 @@ lib.properties = {
 	opacity: 1.00,
 	webfonts: {},
 	manifest: [
-		{src:"images/SpaceHitProject_atlas_1.png?1612984160214", id:"SpaceHitProject_atlas_1"},
-		{src:"sounds/mypositive.mp3?1612984163594", id:"mypositive"},
-		{src:"https://code.jquery.com/jquery-3.4.1.min.js?1612984163594", id:"lib/jquery-3.4.1.min.js"},
-		{src:"components/sdk/anwidget.js?1612984163594", id:"sdk/anwidget.js"},
-		{src:"components/ui/src/css.js?1612984163594", id:"an.CSS"},
-		{src:"components/ui/src/combobox.js?1612984163594", id:"an.ComboBox"}
+		{src:"images/SpaceHitProject_atlas_1.png?1613126447817", id:"SpaceHitProject_atlas_1"},
+		{src:"sounds/mypositive.mp3?1613126450300", id:"mypositive"},
+		{src:"https://code.jquery.com/jquery-3.4.1.min.js?1613126450300", id:"lib/jquery-3.4.1.min.js"},
+		{src:"components/sdk/anwidget.js?1613126450300", id:"sdk/anwidget.js"},
+		{src:"components/ui/src/css.js?1613126450300", id:"an.CSS"},
+		{src:"components/ui/src/combobox.js?1613126450300", id:"an.ComboBox"}
 	],
 	preloads: []
 };
