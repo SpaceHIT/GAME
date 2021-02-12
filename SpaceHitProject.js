@@ -5734,7 +5734,7 @@ if (reversed == null) { reversed = false; }
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.orangePlanet_opening_inside, new cjs.Rectangle(-128.9,-134.7,257.8,257.9), null);
+}).prototype = getMCSymbolPrototype(lib.orangePlanet_opening_inside, new cjs.Rectangle(-128.9,-134.9,257.8,257.9), null);
 
 
 (lib.housePlanet_opening_inside = function(mode,startPosition,loop,reversed) {
@@ -13459,7 +13459,7 @@ if (reversed == null) { reversed = false; }
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.EA_OrangePlanet, new cjs.Rectangle(-157.3,-157.7,314.70000000000005,314.7), null);
+}).prototype = getMCSymbolPrototype(lib.EA_OrangePlanet, new cjs.Rectangle(-157.3,-157.6,314.70000000000005,314.6), null);
 
 
 (lib.EA_BluePlanet = function(mode,startPosition,loop,reversed) {
@@ -17264,7 +17264,7 @@ if (reversed == null) { reversed = false; }
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.EA_OrangePlanet_Inside, new cjs.Rectangle(-157.3,-159.8,314.6,314.6), null);
+}).prototype = getMCSymbolPrototype(lib.EA_OrangePlanet_Inside, new cjs.Rectangle(-157.3,-159.9,314.6,314.6), null);
 
 
 (lib.EA_HomePlanetEnding = function(mode,startPosition,loop,reversed) {
@@ -18510,7 +18510,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-170.7,-223.5,346.5,446.4);
+p.nominalBounds = new cjs.Rectangle(-170.8,-223.5,346.6,446.4);
 
 
 (lib.caftor = function(mode,startPosition,loop,reversed) {
@@ -19400,7 +19400,7 @@ if (reversed == null) { reversed = false; }
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.Inside_happy_blue_alien, new cjs.Rectangle(-49.2,-43.4,97.5,87.19999999999999), null);
+}).prototype = getMCSymbolPrototype(lib.Inside_happy_blue_alien, new cjs.Rectangle(-49.2,-43.4,97.4,87.1), null);
 
 
 (lib.blue_alien1 = function(mode,startPosition,loop,reversed) {
@@ -19600,7 +19600,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-54.1,-60.7,107.2,122.7);
+p.nominalBounds = new cjs.Rectangle(-54.2,-60.6,107.2,122.6);
 
 
 (lib.blue_alien_arm2 = function(mode,startPosition,loop,reversed) {
@@ -19848,7 +19848,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(0,-6,257.8,257.9);
+p.nominalBounds = new cjs.Rectangle(0,-6.2,257.8,257.9);
 
 
 (lib.housePlanet_opening = function(mode,startPosition,loop,reversed) {
@@ -23203,7 +23203,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-324.1,-267.3,627,529.7);
+p.nominalBounds = new cjs.Rectangle(-324.1,-267.6,627,529.7);
 
 
 (lib.spaceship_game_1 = function(mode,startPosition,loop,reversed) {
@@ -23944,7 +23944,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-342.5,-263.4,663.4,529.0999999999999);
+p.nominalBounds = new cjs.Rectangle(-342.5,-263.3,663.4,529.1);
 
 
 (lib.YellowAlien1_1 = function(mode,startPosition,loop,reversed) {
@@ -24204,7 +24204,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-324.2,-270.2,621.4,530.3);
+p.nominalBounds = new cjs.Rectangle(-324.2,-270.5,621.4,530.4);
 
 
 (lib.RocketWithAlien_Pink = function(mode,startPosition,loop,reversed) {
@@ -24517,7 +24517,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-151.4,-160,326.5,326.5);
+p.nominalBounds = new cjs.Rectangle(-151.4,-160.1,326.5,326.5);
 
 
 (lib.EA_BluePlanet_1 = function(mode,startPosition,loop,reversed) {
@@ -24795,7 +24795,7 @@ if (reversed == null) { reversed = false; }
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.EA_Blue_HomePlanetEndingWithAliens, new cjs.Rectangle(-465.3,-356.1,953.4000000000001,687.7), null);
+}).prototype = getMCSymbolPrototype(lib.EA_Blue_HomePlanetEndingWithAliens, new cjs.Rectangle(-465.3,-356,953.4000000000001,687.6), null);
 
 
 (lib.BlueAlien_1 = function(mode,startPosition,loop,reversed) {
@@ -24951,7 +24951,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-334.1,-261.6,650.2,528.8);
+p.nominalBounds = new cjs.Rectangle(-334.1,-261.5,650.2,528.8);
 
 
 (lib.ChooseAlien = function(mode,startPosition,loop,reversed) {
@@ -25058,7 +25058,7 @@ if (reversed == null) { reversed = false; }
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.ChooseAlien, new cjs.Rectangle(-170.7,-335.7,746.7,651.9), null);
+}).prototype = getMCSymbolPrototype(lib.ChooseAlien, new cjs.Rectangle(-170.8,-335.7,746.8,651.9), null);
 
 
 (lib.Asteroid3_positive_animation = function(mode,startPosition,loop,reversed) {
@@ -29394,7 +29394,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-53.8,-60.8,107.4,122.6);
+p.nominalBounds = new cjs.Rectangle(-53.8,-60.7,107.4,122.6);
 
 
 (lib.blue_alien2 = function(mode,startPosition,loop,reversed) {
@@ -29516,7 +29516,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-70.6,-72.7,139.89999999999998,134.4);
+p.nominalBounds = new cjs.Rectangle(-70.6,-72.6,139.89999999999998,134.3);
 
 
 (lib.blue_alien = function(mode,startPosition,loop,reversed) {
@@ -29559,7 +29559,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-1,2.2,107.5,122.7);
+p.nominalBounds = new cjs.Rectangle(-1.1,2.2,107.6,122.8);
 
 
 (lib.planets_opening_inside = function(mode,startPosition,loop,reversed) {
@@ -29897,7 +29897,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-56.3,-60.7,107.3,122.4);
+p.nominalBounds = new cjs.Rectangle(-56.3,-60.6,107.3,122.30000000000001);
 
 
 (lib.StopGame_blue_alien_animation = function(mode,startPosition,loop,reversed) {
@@ -31162,7 +31162,7 @@ if (reversed == null) { reversed = false; }
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.EA_HomePlanet_Pink, new cjs.Rectangle(-451.2,-437.1,902.4,763.3), null);
+}).prototype = getMCSymbolPrototype(lib.EA_HomePlanet_Pink, new cjs.Rectangle(-451.2,-437.2,902.4,763.4), null);
 
 
 (lib.Ending_Animation_BlueAlien = function(mode,startPosition,loop,reversed) {
@@ -31513,7 +31513,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-887.2,-1135.5,1843.4,2017.4);
+p.nominalBounds = new cjs.Rectangle(-887.2,-1135.4,1843.4,2017.3000000000002);
 
 
 (lib.EA_Pink_HomePlanetEndingWithAliens = function(mode,startPosition,loop,reversed) {
@@ -32837,7 +32837,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-887.2,-1170.6,1843.4,2070);
+p.nominalBounds = new cjs.Rectangle(-887.2,-1170.5,1843.4,2069.9);
 
 
 (lib.endingAnimation = function(mode,startPosition,loop,reversed) {
@@ -34564,14 +34564,14 @@ if (reversed == null) { reversed = false; }
 		function pauseGame() {
 			gamePlayer = false;
 			tickerVar = false;
+			spaceship.visible = false;
+			createjs.Sound.muted = true;
 			clearInterval(myAsteroid);
 			stage.getChildByName("levelNum" + myPlanets).visible = false;
 			game.addChild(pauseGameVar);
 			pauseGameVar.gotoAndStop(alienVar);
 			pauseGameVar.x = 640;
 			pauseGameVar.y = 90;
-			createjs.Sound.muted = true;
-			spaceship.visible = false;
 			pauseGameVar.BTN_unStopGame.addEventListener("click", keepMooving);
 			pauseGameVar.BTN_unStopGame.cursor = "pointer";
 		
@@ -34586,7 +34586,7 @@ if (reversed == null) { reversed = false; }
 			tickerVar = true;
 			spaceship.visible = true;
 			startMoving();
-			controlMusic();
+			
 		}
 		
 		//פונקציית שליטה בסאונד
@@ -35034,12 +35034,12 @@ lib.properties = {
 	opacity: 1.00,
 	webfonts: {},
 	manifest: [
-		{src:"images/SpaceHitProject_atlas_1.png?1613137467175", id:"SpaceHitProject_atlas_1"},
-		{src:"sounds/mypositive.mp3?1613137469601", id:"mypositive"},
-		{src:"https://code.jquery.com/jquery-3.4.1.min.js?1613137469601", id:"lib/jquery-3.4.1.min.js"},
-		{src:"components/sdk/anwidget.js?1613137469601", id:"sdk/anwidget.js"},
-		{src:"components/ui/src/css.js?1613137469601", id:"an.CSS"},
-		{src:"components/ui/src/combobox.js?1613137469601", id:"an.ComboBox"}
+		{src:"images/SpaceHitProject_atlas_1.png?1613144756573", id:"SpaceHitProject_atlas_1"},
+		{src:"sounds/mypositive.mp3?1613144759003", id:"mypositive"},
+		{src:"https://code.jquery.com/jquery-3.4.1.min.js?1613144759003", id:"lib/jquery-3.4.1.min.js"},
+		{src:"components/sdk/anwidget.js?1613144759003", id:"sdk/anwidget.js"},
+		{src:"components/ui/src/css.js?1613144759003", id:"an.CSS"},
+		{src:"components/ui/src/combobox.js?1613144759003", id:"an.ComboBox"}
 	],
 	preloads: []
 };
