@@ -9029,19 +9029,19 @@ if (reversed == null) { reversed = false; }
 
 	// Layer_2
 	this.shape_4 = new cjs.Shape();
-	this.shape_4.graphics.f("rgba(0,0,0,0.008)").s().p("AlYKDIAA0FIKxAAIAAUFg");
-	this.shape_4.setTransform(16.4,10.8);
+	this.shape_4.graphics.f("rgba(0,0,0,0.008)").s().p("AkSKDIAA0FIIlAAIAAUFg");
+	this.shape_4.setTransform(16.4,10.8306,1,0.7667);
 
 	this.shape_5 = new cjs.Shape();
-	this.shape_5.graphics.f("rgba(0,0,0,0.008)").s().p("AlEJ5IAAzxIKJAAIAATxg");
-	this.shape_5.setTransform(16.4,10.75);
+	this.shape_5.graphics.f("rgba(0,0,0,0.008)").s().p("AkIH3IAAvtIIRAAIAAPtg");
+	this.shape_5.setTransform(16.4,10.8);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_4}]}).to({state:[{t:this.shape_5}]},1).wait(1));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-18.1,-53.5,69,128.6);
+p.nominalBounds = new cjs.Rectangle(-11.1,-39.5,55,100.6);
 
 
 (lib.skipBtn = function(mode,startPosition,loop,reversed) {
@@ -9605,7 +9605,7 @@ if (reversed == null) { reversed = false; }
 
 	// Layer_1
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#FFFFFF").ss(4,1,1).p("AgqhQIAACjAArhSIAACk");
+	this.shape.graphics.f().s("#FFFFFF").ss(4,1,1).p("AArhSIAACkAgqhQIAACj");
 	this.shape.setTransform(6.3,10.2);
 
 	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
@@ -9613,13 +9613,13 @@ if (reversed == null) { reversed = false; }
 	// Layer_2
 	this.shape_1 = new cjs.Shape();
 	this.shape_1.graphics.f("rgba(0,0,0,0.008)").s().p("AkiHIIAAuPIJFAAIAAOPg");
-	this.shape_1.setTransform(6.4,10.1);
+	this.shape_1.setTransform(6.3944,10.1351,0.6554,0.7807);
 
 	this.timeline.addTween(cjs.Tween.get(this.shape_1).wait(1));
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.pauseBtn, new cjs.Rectangle(-22.6,-35.5,58.1,91.2), null);
+}).prototype = getMCSymbolPrototype(lib.pauseBtn, new cjs.Rectangle(-12.6,-25.4,38.1,71.19999999999999), null);
 
 
 (lib.spaceShip_opening_flames_2 = function(mode,startPosition,loop,reversed) {
@@ -34374,7 +34374,7 @@ if (reversed == null) { reversed = false; }
 					if (spaceship.x < fallAsteroid[i].x + 75 &&
 						spaceship.x > fallAsteroid[i].x - 75 &&
 						spaceship.y < fallAsteroid[i].y + 140 &&
-						spaceship.y > fallAsteroid[i].y - 90) {
+						spaceship.y > fallAsteroid[i].y - 75) {
 						if (fallAsteroid[i].name == "true" && pgiaaTrue == false) {
 							//משתנה השומר את מיקום האסטרואיד בלולאה
 							asteroidVar = i;
@@ -34756,7 +34756,7 @@ if (reversed == null) { reversed = false; }
 			caftor.cursor = "pointer";
 		
 			//תנאי לשינוי נראות הכפתור בסוף המשחק
-			if (myPlanets >= 3) {
+			if (myPlanets >= 4) {
 				caftor.gotoAndStop(1);
 			}
 		
@@ -35034,12 +35034,12 @@ lib.properties = {
 	opacity: 1.00,
 	webfonts: {},
 	manifest: [
-		{src:"images/SpaceHitProject_atlas_1.png?1613144756573", id:"SpaceHitProject_atlas_1"},
-		{src:"sounds/mypositive.mp3?1613144759003", id:"mypositive"},
-		{src:"https://code.jquery.com/jquery-3.4.1.min.js?1613144759003", id:"lib/jquery-3.4.1.min.js"},
-		{src:"components/sdk/anwidget.js?1613144759003", id:"sdk/anwidget.js"},
-		{src:"components/ui/src/css.js?1613144759003", id:"an.CSS"},
-		{src:"components/ui/src/combobox.js?1613144759003", id:"an.ComboBox"}
+		{src:"images/SpaceHitProject_atlas_1.png?1613212910189", id:"SpaceHitProject_atlas_1"},
+		{src:"sounds/mypositive.mp3?1613212912309", id:"mypositive"},
+		{src:"https://code.jquery.com/jquery-3.4.1.min.js?1613212912309", id:"lib/jquery-3.4.1.min.js"},
+		{src:"components/sdk/anwidget.js?1613212912309", id:"sdk/anwidget.js"},
+		{src:"components/ui/src/css.js?1613212912309", id:"an.CSS"},
+		{src:"components/ui/src/combobox.js?1613212912309", id:"an.ComboBox"}
 	],
 	preloads: []
 };
